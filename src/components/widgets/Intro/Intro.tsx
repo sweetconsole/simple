@@ -52,7 +52,7 @@ const Intro: FC = () => {
 				>
 					<source srcSet={IntroImageTablet} media="(max-width: 576px)" />
 					<source srcSet={IntroImageNotebook} media="(max-width: 768px)" />
-					<img src={IntroImageDesktop} alt="Error loading..." />
+					<img src={IntroImageDesktop} alt="Ошибка загрузки..." />
 				</motion.picture>
 			</Container>
 		</section>

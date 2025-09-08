@@ -1,0 +1,43 @@
+
+.block {
+	padding: 120px 0 90px;
+	background: #EBEBEB;
+}
+
+.features {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin-top: 50px;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 90px;
+}
+
+
+.info {
+	width: 350px;
+}
+
+.title {
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 100%;
+	color: #666;
+}
+
+.text {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 170%;
+	color: #85859B;
+
+	&:first-of-type {
+		margin-bottom: 15px;
+	}
+}

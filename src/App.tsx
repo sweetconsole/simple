@@ -1,13 +1,14 @@
 import { type FC } from "react"
 import "./assets/styles/general.scss"
 import { Container } from "./components/ui"
-import { Header, Intro } from "./components/widgets"
+import { Header, Intro, Features } from "./components/widgets"
 
 const App: FC = () => {
 	return (
 		<>
 			<Header />
 			<Intro />
+			<Features />
 			<Container>
 				<p style={{ backgroundColor: "aqua" }}>
 					Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque

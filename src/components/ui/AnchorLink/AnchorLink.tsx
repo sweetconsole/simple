@@ -20,7 +20,7 @@ const AnchorLink: FC<AnchorLinkProps> = ({
 			className={[styles.link, customStyles].join(" ")}
 			to={anchor}
 			smooth={true}
-			offset={-100}
+			offset={-80}
 			duration={500}
 		>
 			{text}
