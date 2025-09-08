@@ -33,7 +33,7 @@ const Header: FC = () => {
 			className={getStylesHeader()}
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
-			transition={{ delay: 0.2, duration: 0.4 }}
+			transition={{ delay: 1.0, duration: 0.4 }}
 			viewport={{ once: true }}
 		>
 			<Container customStyles={styles.block}>

@@ -1,0 +1,37 @@
+
+.intro {
+	margin-top: 60px;
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 445px;
+}
+
+.title {
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 100%;
+	color: #4C5866;
+}
+
+.description {
+	font-size: 18px;
+	line-height: 150%;
+	color: #85859B;
+}
+
+.image {
+	position: relative;
+	z-index: -1;
+	width: 540px;
+	height: 560px;
+}
