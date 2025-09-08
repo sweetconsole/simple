@@ -1,0 +1,14 @@
+@use "../../assets/styles/variables";
+
+* {
+	color: red;
+}
+
+body {
+	font-family: Roboto, serif;
+	font-size: 18px;
+}
+
+a {
+	cursor: pointer;
+}

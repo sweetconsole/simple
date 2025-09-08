@@ -1,0 +1,20 @@
+@use "../../../assets/styles/variables";
+
+.link {
+	font-size: 20px;
+	line-height: 23px;
+	color: #4C5866;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		color: variables.$color-accent;
+	}
+
+	&:active {
+		color: variables.$color-accent-dark;
+	}
+	
+	@media (width <= 320px) {
+		font-size: 18px;
+	}
+}

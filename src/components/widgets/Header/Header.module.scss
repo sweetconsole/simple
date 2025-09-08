@@ -1,0 +1,41 @@
+
+
+.header {
+	position: sticky;
+	top: 0;
+	justify-content: space-between;
+	width: 100%;
+	height: 78px;
+	background-color: white;
+
+	&::after {
+		position: static;
+		display: block;
+		width: 100%;
+		height: 2px;
+		content: "";
+		background: #DDD;
+		opacity: 0;
+		transition: all .2s ease-in-out;
+	}
+}
+
+.header_scroll {
+	&::after {
+		opacity: 1;
+	}
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 600px;
+}

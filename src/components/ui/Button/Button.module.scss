@@ -1,0 +1,33 @@
+@use "../../../assets/styles/variables";
+
+.button {
+	width: 255px;
+	height: 70px;
+	font-size: 20px;
+	color: variables.$color-accent;
+	cursor: pointer;
+	background: transparent;
+	border: 2px solid variables.$color-accent;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		color: white;
+		background-color: variables.$color-accent;
+	}
+
+	&:active {
+		background-color: variables.$color-accent-dark;
+		border-color: variables.$color-accent-dark;
+	}
+	
+	@media (width <= 576px) {
+		width: 196px;
+		height: 60px;
+	}
+
+	@media (width <= 320px) {
+		width: 144px;
+		height: 50px;
+		font-size: 18px;
+	}
+}
