@@ -1,5 +1,9 @@
 @use "../../assets/styles/variables";
 
+:root {
+	color-scheme: only light;
+}
+
 * {
 	color: red;
 }
@@ -9,6 +13,20 @@ body {
 	font-size: 18px;
 }
 
-a {
+body::-webkit-scrollbar {
+	width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #EBEBEB;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #85859B;
+	border: 3px solid #EBEBEB;
+	border-radius: 20px;
+}
+
+a, button {
 	cursor: pointer;
 }
