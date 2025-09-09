@@ -4,7 +4,8 @@ import {
 	Intro,
 	Features,
 	Products,
-	Partners
+	Partners,
+	New
 } from "./components/widgets"
 import "./assets/styles/general.scss"
 
@@ -16,6 +17,7 @@ const App: FC = () => {
 			<Features />
 			<Products />
 			<Partners />
+			<New />
 		</>
 	)
 }

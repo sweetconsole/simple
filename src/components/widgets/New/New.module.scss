@@ -1,0 +1,36 @@
+
+.block {
+	margin-top: 90px;
+}
+
+.content {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.info {
+	max-width: 350px;
+
+}
+
+.title {
+	margin-bottom: 8px;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 100%;
+	color: #666;
+}
+
+.description {
+	margin-bottom: 30px;
+	font-size: 18px;
+	line-height: 170%;
+	color: #85859B;
+}
+
+.image {
+
+}
