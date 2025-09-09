@@ -1,0 +1,60 @@
+@use "../../../../assets/styles/variables";
+
+.product {
+	width: 100%;
+}
+
+.image {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.title {
+	margin-bottom: 8px;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 35px;
+	color: #666;
+}
+
+.circulation {
+	margin-bottom: 8px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #B5B5BD;
+}
+
+.description {
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 170%;
+	color: #85859B;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	line-height: 23px;
+	color: variables.$color-accent;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		color: variables.$color-accent-dark;
+
+		&::after {
+			background-image: url("../../../../assets/images/arrow_hover.svg");
+		}
+	}
+
+	&::after {
+		display: inline-block;
+		width: 28px;
+		height: 15px;
+		margin-left: 5px;
+		content: "";
+		background-image: url("../../../../assets/images/arrow.svg");
+		background-repeat: no-repeat;
+		transition: all .2s ease-in-out;
+	}
+}

@@ -1,9 +1,8 @@
 import { type FC, useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Logo from "../../../assets/images/dark_logo.svg"
+import { Container, AnchorLink } from "../../ui"
 import styles from "./Header.module.scss"
-import { Container } from "../../ui"
-import AnchorLink from "../../ui/AnchorLink/AnchorLink.tsx"
 
 const Header: FC = () => {
 	const [scroll, setScroll] = useState<number>(0)

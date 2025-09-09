@@ -1,4 +1,4 @@
-import { type FC } from "react"
+import { type FC, useRef, forwardRef } from "react"
 import { motion } from "framer-motion"
 import FeatureImageFour from "../../../assets/images/features_4.png"
 import { Container } from "../../ui"
@@ -7,6 +7,8 @@ import FeaturePoint from "./FeaturePoint/FeaturePoint.tsx"
 import { features } from "./features.data.ts"
 
 const Features: FC = () => {
+	const scrollContentRef = useRef(null)
+
 	return (
 		<section className={styles.block} id="features">
 			<Container>
@@ -16,7 +18,7 @@ const Features: FC = () => {
 					))}
 				</ul>
 
-				<div className={styles.content}>
+				<div className={styles.content} ref={scrollContentRef}>
 					<motion.img
 						className={styles.image}
 						src={FeatureImageFour}
@@ -33,7 +35,7 @@ const Features: FC = () => {
 							initial={{ x: 100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.4, duration: 0.4 }}
-							viewport={{ once: true }}
+							viewport={{ once: true, root: scrollContentRef }}
 						>
 							Максимальная белизна
 						</motion.h2>
@@ -42,7 +44,7 @@ const Features: FC = () => {
 							initial={{ x: 100, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
 							transition={{ delay: 0.6, duration: 0.4 }}
-							viewport={{ once: true }}
+							viewport={{ once: true, root: scrollContentRef }}
 						>
 							Для повышения белизны, гладкости и мягкости в состав бумажной
 							массы вводят белые минеральные вещества: мел, тальк, каолин и др.
