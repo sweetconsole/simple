@@ -1,5 +1,11 @@
 import { type FC } from "react"
-import { Header, Intro, Features, Products } from "./components/widgets"
+import {
+	Header,
+	Intro,
+	Features,
+	Products,
+	Partners
+} from "./components/widgets"
 import "./assets/styles/general.scss"
 
 const App: FC = () => {
@@ -9,6 +15,7 @@ const App: FC = () => {
 			<Intro />
 			<Features />
 			<Products />
+			<Partners />
 		</>
 	)
 }

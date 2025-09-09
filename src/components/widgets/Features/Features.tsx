@@ -1,10 +1,10 @@
-import { type FC, useRef, forwardRef } from "react"
+import { type FC, useRef } from "react"
 import { motion } from "framer-motion"
 import FeatureImageFour from "../../../assets/images/features_4.png"
 import { Container } from "../../ui"
-import styles from "./Features.module.scss"
 import FeaturePoint from "./FeaturePoint/FeaturePoint.tsx"
 import { features } from "./features.data.ts"
+import styles from "./Features.module.scss"
 
 const Features: FC = () => {
 	const scrollContentRef = useRef(null)

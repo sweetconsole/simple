@@ -36,7 +36,9 @@ const Header: FC = () => {
 			viewport={{ once: true }}
 		>
 			<Container customStyles={styles.block}>
-				<img className={styles.logo} src={Logo} alt="simple" />
+				<AnchorLink anchor="root">
+					<img className={styles.logo} src={Logo} alt="simple" />
+				</AnchorLink>
 
 				<nav className={styles.navigation}>
 					<AnchorLink text="Преимущества" anchor="features" />
