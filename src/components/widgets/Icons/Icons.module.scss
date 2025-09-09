@@ -1,0 +1,14 @@
+@use "../../../assets/styles/variables";
+
+.icon path {
+	fill: white;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		fill: variables.$color-accent-light;
+	}
+
+	&:active {
+		fill: variables.$color-accent;
+	}
+}
