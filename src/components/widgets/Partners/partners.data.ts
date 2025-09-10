@@ -8,24 +8,28 @@ export const partners: Array<PartnerType> = [
 	{
 		image: PartnerLogoOne,
 		title: "Hahnemuhle",
+		link: "www.hahnemuehle.shop/",
 		initial: { x: -100, opacity: 0 },
 		whileInView: { x: 0, opacity: 1 }
 	},
 	{
 		image: PartnerLogoTwo,
 		title: "Canson",
+		link: "en.canson.com/",
 		initial: { y: 100, opacity: 0 },
 		whileInView: { y: 0, opacity: 1 }
 	},
 	{
 		image: PartnerLogoThree,
 		title: "Royal Talens",
+		link: "www.royaltalens.com/",
 		initial: { y: 100, opacity: 0 },
 		whileInView: { y: 0, opacity: 1 }
 	},
 	{
 		image: PartnerLogoFour,
 		title: "Fabriano",
+		link: "fabriano.com/",
 		initial: { x: 100, opacity: 0 },
 		whileInView: { x: 0, opacity: 1 }
 	}

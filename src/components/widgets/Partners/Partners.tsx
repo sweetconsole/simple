@@ -7,25 +7,25 @@ import styles from "./Partners.module.scss"
 const Partners: FC = () => {
 	return (
 		<section className={styles.block} id="partners">
-			<Container>
-				<ul className={styles.partners}>
-					{partners.map((partner, index) => (
-						<motion.li
-							className={styles.partner}
-							key={index}
-							initial={partner.initial}
-							whileInView={partner.whileInView}
-							transition={{ delay: 0.4, duration: 0.4 }}
-							viewport={{ once: true }}
-						>
-							<img
-								className={styles.logo}
-								src={partner.image}
-								alt={partner.title}
-							/>
-						</motion.li>
-					))}
-				</ul>
+			<Container customStyles={styles.partners}>
+				{partners.map((partner, index) => (
+					<motion.a
+						className={styles.partner}
+						href={`https://${partner.link}`}
+						target="_blank"
+						key={index}
+						initial={partner.initial}
+						whileInView={partner.whileInView}
+						transition={{ delay: 0.4, duration: 0.4 }}
+						viewport={{ once: true }}
+					>
+						<img
+							className={styles.logo}
+							src={partner.image}
+							alt={partner.title}
+						/>
+					</motion.a>
+				))}
 			</Container>
 		</section>
 	)
