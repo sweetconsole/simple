@@ -1,19 +1,55 @@
 .block {
 	padding: 90px 0;
 	background-color: #EBEBEB;
+
+	@media (width <= 1320px) {
+		padding: 60px 0;
+	}
+
+	@media (width <= 568px) {
+		padding: 50px 0;
+	}
 }
 
 .partners {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 30px;
+	overflow-x: auto;
 	list-style: none;
+	scrollbar-width: none;
+
+	@media (width <= 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (width <= 568px) {
+		grid-template-columns: repeat(4, 150px);
+		cursor: grab;
+
+		&:active {
+			cursor: grabbing;
+		}
+
+	}
 }
 
 .partner {
 	height: 135px;
 	padding: 18px;
 	border: 2px solid #C4C4C4;
+
+	@media (width <= 1320px) {
+		height: 80px;
+	}
+
+	@media (width <= 768px) {
+		height: 130px;
+	}
+
+	@media (width <= 568px) {
+		height: 80px;
+	}
 }
 
 .logo {

@@ -50,8 +50,8 @@ const Intro: FC = () => {
 					transition={{ delay: 0.8, duration: 0.4 }}
 					viewport={{ once: true }}
 				>
-					<source srcSet={IntroImageTablet} media="(max-width: 576px)" />
-					<source srcSet={IntroImageNotebook} media="(max-width: 768px)" />
+					<source srcSet={IntroImageTablet} media="(max-width: 768px)" />
+					<source srcSet={IntroImageNotebook} media="(max-width: 1320px)" />
 					<img src={IntroImageDesktop} alt="Ошибка загрузки..." />
 				</motion.picture>
 			</Container>

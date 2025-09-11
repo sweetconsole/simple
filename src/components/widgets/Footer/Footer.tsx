@@ -12,6 +12,8 @@ const Footer: FC = () => {
 					<img className={styles.logo} src={Logo} alt="Simple" />
 				</AnchorLink>
 
+				<div className={styles.line}></div>
+
 				<nav className={styles.networks}>
 					{networks.map((network, index) => (
 						<a

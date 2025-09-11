@@ -49,8 +49,11 @@ const New: FC = () => {
 					transition={{ delay: 1.0, duration: 0.4 }}
 					viewport={{ once: true }}
 				>
-					<source srcSet={SketchbookImageTablet} media="(max-width: 576px)" />
-					<source srcSet={SketchbookImageNotebook} media="(max-width: 768px)" />
+					<source srcSet={SketchbookImageTablet} media="(max-width: 768px)" />
+					<source
+						srcSet={SketchbookImageNotebook}
+						media="(max-width: 1320px)"
+					/>
 					<img src={SketchbookImageDesktop} alt="Ошибка загрузки..." />
 				</motion.picture>
 			</Container>

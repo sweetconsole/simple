@@ -20,12 +20,12 @@
 		border-color: variables.$color-accent-dark;
 	}
 	
-	@media (width <= 576px) {
+	@media (width <= 768px) {
 		width: 196px;
 		height: 60px;
 	}
 
-	@media (width <= 320px) {
+	@media (width <= 568px) {
 		width: 144px;
 		height: 50px;
 		font-size: 18px;

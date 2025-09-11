@@ -8,6 +8,24 @@
 	display: flex;
 	place-content: space-between space-between;
 	padding: 24px 0;
+
+	@media (width <= 568px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.line {
+	display: none;
+	width: 100%;
+	height: 1px;
+	margin: 20px 0;
+	background-color: #DDD;
+	opacity: 0.2;
+
+	@media (width <= 568px) {
+		display: block;
+	}
 }
 
 .networks {

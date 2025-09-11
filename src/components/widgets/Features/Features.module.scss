@@ -2,6 +2,14 @@
 .block {
 	padding: 120px 0 90px;
 	background: #EBEBEB;
+
+	@media (width <= 1320px) {
+		padding: 60px 0;
+	}
+
+	@media (width <= 568px) {
+		padding: 50px 0;
+	}
 }
 
 .features {
@@ -10,6 +18,12 @@
 	gap: 30px;
 	margin-top: 50px;
 	list-style: none;
+
+	@media (width <= 568px) {
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: 1fr;
+		gap: 50px;
+	}
 }
 
 .content {
@@ -17,11 +31,37 @@
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 90px;
+
+	@media (width <= 1320px) {
+		align-items: flex-start;
+		margin-top: 40px;
+	}
+
+	@media (width <= 768px) {
+		flex-direction: column;
+	}
 }
 
+.image {
+	width: 730px;
+	height: 564px;
+
+	@media (width <= 1320px) {
+		width: 330px;
+		height: 256px;
+	}
+}
 
 .info {
 	width: 350px;
+
+	@media (width <= 1320px) {
+		width: 330px;
+	}
+
+	@media (width <= 768px) {
+		width: 100%;
+	}
 }
 
 .title {
@@ -30,6 +70,15 @@
 	font-weight: 400;
 	line-height: 100%;
 	color: #666;
+
+	@media (width <= 1320px) {
+		font-size: 30px;
+	}
+
+	@media (width <= 768px) {
+		margin-bottom: 10px;
+		font-size: 24px;
+	}
 }
 
 .text {
@@ -40,5 +89,20 @@
 
 	&:first-of-type {
 		margin-bottom: 15px;
+	}
+
+	@media (width <= 1320px) {
+		&:first-of-type {
+			margin-bottom: 10px;
+		}
+	}
+
+	@media (width <= 768px) {
+		font-size: 16px;
+
+		&:first-of-type {
+			margin-bottom: 2px;
+
+		}
 	}
 }

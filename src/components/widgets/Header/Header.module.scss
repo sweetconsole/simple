@@ -38,4 +38,39 @@
 	justify-content: space-between;
 	width: 100%;
 	max-width: 600px;
+
+	@media (width <= 1320px) {
+		max-width: 490px;
+	}
+
+	@media (width <= 768px) {
+		display: none;
+	}
+}
+
+.navigation_active {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background-color: #EBEBEB;
+}
+
+.button {
+	display: none;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	background-image: url("../../../assets/images/burger.svg");
+	border: none;
+
+	@media (width <= 768px) {
+		display: block;
+	}
+}
+
+.button_active {
+	background-image: url("../../../assets/images/close.svg");
 }

@@ -4,8 +4,9 @@
 	color-scheme: only light;
 }
 
-* {
-	color: red;
+*::selection {
+	color: white;
+	background-color: variables.$color-accent	;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-	width: 12px;
+	width: 9px;
 }
 
 body::-webkit-scrollbar-track {
@@ -23,8 +24,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
 	background-color: #85859B;
-	border: 3px solid #EBEBEB;
-	border-radius: 20px;
+	border-radius: 30px;
 }
 
 a, button {

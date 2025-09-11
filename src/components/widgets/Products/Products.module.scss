@@ -1,6 +1,14 @@
 
 .block {
 	padding: 90px 0;
+
+	@media (width <= 1320px) {
+		padding: 60px 0;
+	}
+
+	@media (width <= 568px) {
+		padding: 50px 0;
+	}
 }
 
 .products {
@@ -8,4 +16,18 @@
 	grid-template-columns: repeat(4, 1fr);
 	gap: 30px;
 	list-style: none;
+
+	@media (width <= 1320px) {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 60px;
+	}
+
+	@media (width <= 768px) {
+		row-gap: 40px;
+	}
+
+	@media (width <= 568px) {
+		grid-template-columns: 1fr;
+		row-gap: 60px;
+	}
 }

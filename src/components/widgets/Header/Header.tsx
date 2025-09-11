@@ -6,6 +6,7 @@ import styles from "./Header.module.scss"
 
 const Header: FC = () => {
 	const [scroll, setScroll] = useState<number>(0)
+	const [viewMenu, setViewMenu] = useState(false)
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -19,11 +20,31 @@ const Header: FC = () => {
 		}
 	}, [])
 
+	const changeViewMenu = () => {
+		setViewMenu(!viewMenu)
+	}
+
 	const getStylesHeader = () => {
 		if (scroll > 0) {
 			return [styles.header, styles.header_scroll].join(" ")
 		} else {
 			return styles.header
+		}
+	}
+
+	const getStylesMenu = () => {
+		if (viewMenu) {
+			return [styles.navigation, styles.navigation_active].join(" ")
+		} else {
+			return styles.navigation
+		}
+	}
+
+	const getStylesButton = () => {
+		if (viewMenu) {
+			return [styles.button, styles.button_active].join(" ")
+		} else {
+			return styles.button
 		}
 	}
 
@@ -46,6 +67,8 @@ const Header: FC = () => {
 					<AnchorLink text="Партнеры" anchor="partners" />
 					<AnchorLink text="Новинка" anchor="new" />
 				</nav>
+
+				<button className={getStylesButton()} onClick={changeViewMenu}></button>
 			</Container>
 		</motion.header>
 	)
