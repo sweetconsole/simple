@@ -1,4 +1,5 @@
 # Simple
+Анимированный лендинг сайта изготовителя бумажных принадлежностей под все нужды человека на React c использованием react-scroll и framer-motion.
 
 ## Технологии
 
@@ -8,9 +9,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="30" height="30" alt="Type Script"/>
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" width="30" height="30" alt="SASS"/>
 </div>
-
-## Тематика сайта
-Изготовление бумажных изделий под все нужды человека.
 
 ## Превью главной страницы
 <img src="public/screenshot.png" >
@@ -28,25 +26,27 @@
 │   │       ├── fonts.scss - стили инициализация шрифтов
 │   │       ├── general.scss - глобальные стили сайта
 │   │       ├── reset.scss - файл сброса стилей браузеров
-│   │       └── variables.scss - файлы переменных
+│   │       └── variables.scss - файл переменных
 │   │
 │   ├── components - директория компонентов
 │   │	├── wigsets
 │   │	└── ui 
 │   │
-│   ├── App.tsx - 
-│   ├── main.tsx - 
+│   ├── App.tsx -  корневой компонент проекта
+│   ├── main.tsx - главный исполняемый файл
 │   └── vite-env.d.ts - файл определения типов переменных окружения 
 │
 ├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
+├── .prettierrc - конфигурация Prettier
+├── .stylelintrc.json - конфигурация Stylelint
+├── eslint.config.js - конфигурация eslint
+├── index.html - корневая страница веб-приложения
+├── package.json - файл управления зависимостями, метаданными проекта
 ├── README.md
-├── tsconfig.app.json
-├── tsconfig.json
-├── tsconfig.node.json
-└── vite.config.ts
+├── tsconfig.app.json - настройки специфичных параметров
+├── tsconfig.json - настройки проекта
+├── tsconfig.node.json - настройки компилятора TypeScript
+└── vite.config.ts - конфигурация сборщика проектов Vite
 ```
 
 ## Запуск проекта
