@@ -32,14 +32,6 @@ const Header: FC = () => {
 		}
 	}
 
-	const getStylesMenu = () => {
-		if (viewMenu) {
-			return [styles.navigation, styles.navigation_active].join(" ")
-		} else {
-			return styles.navigation
-		}
-	}
-
 	const getStylesButton = () => {
 		if (viewMenu) {
 			return [styles.button, styles.button_active].join(" ")
